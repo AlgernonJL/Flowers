@@ -6,7 +6,7 @@ import java.awt.geom.*;
 import javax.swing.*;
 
 @SuppressWarnings("serial")
-public class Flow3 extends Canvas{
+public class Flow3_1 extends Canvas{
 	
 	public void paint(Graphics g){
 		Color[] clrs = {Color.RED,Color.ORANGE,Color.YELLOW,Color.GREEN,Color.GREEN.darker(),
@@ -29,11 +29,12 @@ public class Flow3 extends Canvas{
 	}
 	
 	public static void main(String[] args) {
-		Flow3 fl = new Flow3();
+		Flow3_1 fl = new Flow3_1();
 		JFrame fr = new JFrame();
 		
 		fr.add(fl);
 		fr.setSize(600,600);
 		fr.setVisible(true);
+		fr.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 }
