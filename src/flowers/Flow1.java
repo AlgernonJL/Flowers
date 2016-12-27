@@ -1,5 +1,6 @@
 package flowers;
 import java.awt.*;
+import java.awt.geom.Ellipse2D;
 
 import javax.swing.*;
 
@@ -9,7 +10,17 @@ public class Flow1 extends Canvas{
 	public void paint(Graphics g){
 		Graphics2D g2 = (Graphics2D) g;
 		Dimension d = getSize();
-		g2.drawOval(d.width/2 - 50,d.height/2 - 50, 100, 100);
+		int centX = d.width/2;
+		int centY = d.height/2;
+		Ellipse2D.Double rect = new Ellipse2D.Double(centX,centY, 50, 200);
+		g2.draw(rect);
+		
+		int loop = 0;
+		while(loop<71){
+			g2.rotate(Math.toRadians(5),centX,centY);
+			g2.draw(rect);
+			loop++;
+		}
 		setBackground(Color.WHITE);
 	}
 	
