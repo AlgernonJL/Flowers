@@ -23,20 +23,23 @@ public class Flow3_2 extends JFrame{
 		int centX;
 		int centY;
 		int loop = 0;
-		Rectangle2D.Double rect;
+		int yes = 1;
+		Rectangle2D.Double rect = new Rectangle2D.Double(centX+50, centY+50, 100, 100) ;
 		
 		public Insides(){
 			
 			Timer timer = new Timer(50, new ActionListener(){
 				@Override
 				public void actionPerformed(ActionEvent arg0) {
-					if(loop==0){
+					if(yes==1){
 						centX = getSize().width/2;
 						centY = getSize().height/2;
-						rect = new Rectangle2D.Double(centX+50, centY+50, 100, 100);
+						rect.setRect(centX+50, centY+50, 100, 100);
+						yes = 0;
+					}else{
+						repaint();
+						loop++;
 					}
-					repaint();
-					loop++;
 				}
 			});
 			timer.start();
