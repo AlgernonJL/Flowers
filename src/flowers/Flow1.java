@@ -31,5 +31,6 @@ public class Flow1 extends Canvas{
 		fr.add(f);
 		fr.setSize(550, 550);
         fr.setVisible(true);
+        fr.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 }

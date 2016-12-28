@@ -13,7 +13,8 @@ public class Flow3_2 extends JFrame{
 		setSize(600,600);
 		setContentPane(new Insides());
 		setVisible(true);
-		setResizable(false);
+		setResizable(false);;
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 	
 	class Insides extends JPanel{
