@@ -12,12 +12,13 @@ public class Flow1 extends Canvas{
 		Dimension d = getSize();
 		int centX = d.width/2;
 		int centY = d.height/2;
-		Ellipse2D.Double rect = new Ellipse2D.Double(centX,centY, 50, 200);
+		Ellipse2D.Double rect = new Ellipse2D.Double(centX,centY, 50, 50);
 		g2.draw(rect);
 		
 		int loop = 0;
-		while(loop<71){
-			g2.rotate(Math.toRadians(5),centX,centY);
+		int num = 10;
+		while(loop< (360/num - 1)){
+			g2.rotate(Math.toRadians(num),centX,centY);
 			g2.draw(rect);
 			loop++;
 		}
