@@ -15,30 +15,25 @@ public class Flower_2 extends JFrame{
 		LayoutManager overlay = new OverlayLayout(jp);
 		jp.setLayout(overlay);
 
-		jp.add(new Middle_2(Color.YELLOW,50));
-		jp.add(new Middle_2(Color.YELLOW,60));
-		jp.add(new Middle_2(Color.YELLOW,70));
-		jp.add(new Middle_2(Color.YELLOW,80));
-		jp.add(new Middle_2(Color.YELLOW,90));
-		jp.add(new Middle_2(Color.YELLOW,100));
+		jp.add(new Middle_1_2(Color.YELLOW,50,20,10));
 		jp.add(new Petals_1(Color.ORANGE,10,100,12,0));
 		jp.add(new Petals_1(Color.ORANGE,10,100,12,5));
 		jp.add(new Petals_1(Color.ORANGE,10,100,12,10));
 		jp.add(new Petals_1(Color.ORANGE,10,100,12,15));
 		jp.add(new Petals_1(Color.ORANGE,10,100,12,20));
 		jp.add(new Petals_1(Color.ORANGE,10,100,12,25));
-		jp.add(new Petals_1(Color.ORANGE,10,150,12,0));
-		jp.add(new Petals_1(Color.ORANGE,10,150,12,5));
-		jp.add(new Petals_1(Color.ORANGE,10,150,12,10));
-		jp.add(new Petals_1(Color.ORANGE,10,150,12,15));
-		jp.add(new Petals_1(Color.ORANGE,10,150,12,20));
-		jp.add(new Petals_1(Color.ORANGE,10,150,12,25));
-		jp.add(new Petals_1(Color.ORANGE,10,200,12,0));
-		jp.add(new Petals_1(Color.ORANGE,10,200,12,5));
-		jp.add(new Petals_1(Color.ORANGE,10,200,12,10));
-		jp.add(new Petals_1(Color.ORANGE,10,200,12,15));
-		jp.add(new Petals_1(Color.ORANGE,10,200,12,20));
-		jp.add(new Petals_1(Color.ORANGE,10,200,12,25));
+		jp.add(new Petals_1(Color.ORANGE,15,150,12,0));
+		jp.add(new Petals_1(Color.ORANGE,15,150,12,5));
+		jp.add(new Petals_1(Color.ORANGE,15,150,12,10));
+		jp.add(new Petals_1(Color.ORANGE,15,150,12,15));
+		jp.add(new Petals_1(Color.ORANGE,15,150,12,20));
+		jp.add(new Petals_1(Color.ORANGE,15,150,12,25));
+		jp.add(new Petals_1(Color.ORANGE,20,200,12,0));
+		jp.add(new Petals_1(Color.ORANGE,20,200,12,5));
+		jp.add(new Petals_1(Color.ORANGE,20,200,12,10));
+		jp.add(new Petals_1(Color.ORANGE,20,200,12,15));
+		jp.add(new Petals_1(Color.ORANGE,20,200,12,20));
+		jp.add(new Petals_1(Color.ORANGE,20,200,12,25));
 		add(jp);
 	}
 	
