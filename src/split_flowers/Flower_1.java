@@ -13,10 +13,10 @@ public class Flower_1 extends JFrame{
 		LayoutManager overlay = new OverlayLayout(jp);
 		jp.setLayout(overlay);
 
-		jp.add(new Middle(Color.BLACK,50,50,10));
-		jp.add(new Middle(Color.BLACK,50,100,10));
-		jp.add(new Middle(Color.BLACK,50,150,10));
-		jp.add(new Middle(Color.BLACK,50,200,10));
+		jp.add(new Middle_1(Color.BLACK,50,50,10));
+		jp.add(new Middle_1(Color.BLACK,50,100,10));
+		jp.add(new Middle_1(Color.BLACK,50,150,10));
+		jp.add(new Middle_1(Color.BLACK,50,200,10));
 		add(jp);
 	}
 	

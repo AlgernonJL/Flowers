@@ -4,7 +4,7 @@ import java.awt.*;
 import java.awt.geom.*;
 import javax.swing.*;
 
-public class Middle extends JPanel{
+public class Middle_1 extends JPanel{
 	private static final long serialVersionUID = 4790958990253702306L;
 	int centX;
 	int centY;
@@ -13,7 +13,7 @@ public class Middle extends JPanel{
 	int angle;
 	Color clr;
 	
-	public Middle(Color clr,int width,int length,int angle){
+	public Middle_1(Color clr,int width,int length,int angle){
 		this.clr = clr;
 		this.width = width;
 		this.length = length;
