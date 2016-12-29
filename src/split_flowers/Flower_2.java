@@ -8,6 +8,8 @@ import javax.swing.JPanel;
 import javax.swing.OverlayLayout;
 
 public class Flower_2 extends JFrame{
+	private static final long serialVersionUID = -6892860565190304019L;
+
 	public Flower_2() {
 		super("Flower_2");
 		

@@ -9,6 +9,7 @@ import java.awt.geom.Ellipse2D;
 import javax.swing.JPanel;
 
 public class Petals_1 extends JPanel{
+	private static final long serialVersionUID = 8320991407875614754L;
 	int centX;
 	int centY;
 	Color clr;

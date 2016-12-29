@@ -5,6 +5,7 @@ import java.awt.geom.*;
 import javax.swing.*;
 
 public class Middle_2 extends JPanel{
+	private static final long serialVersionUID = -1496415107865543443L;
 	int centX;
 	int centY;
 	Color clr;
