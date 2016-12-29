@@ -25,6 +25,9 @@ public class Middle_2 extends JPanel{
 		
 		g2.setPaint(clr);
 		g2.fill(new Ellipse2D.Double(centX-rad/2, centY-rad/2, rad,rad));
+		g2.setPaint(Color.BLACK);
+		g2.setStroke(new BasicStroke(1));
+		g2.draw(new Ellipse2D.Double(centX-rad/2, centY-rad/2, rad,rad));
 		
 	}
 }
