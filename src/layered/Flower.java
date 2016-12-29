@@ -17,8 +17,8 @@ public class Flower extends JFrame{
 		JPanel jp = new JPanel();
 		LayoutManager overlay = new OverlayLayout(jp);
 		jp.setLayout(overlay);
-		jp.add(new Middle_1(Color.BLACK,30,30,20));
-		jp.add(new Middle_2(Color.WHITE, 90));
+		jp.add(new Middle_1(Color.BLACK,40,40,20));
+		jp.add(new Middle_2(Color.WHITE,100));
 		jp.add(new DiamSquares(12,50,0));
 		jp.add(new DiamSquares(12,60,15));
 		jp.add(new DiamSquares(12,73,0));
@@ -26,6 +26,8 @@ public class Flower extends JFrame{
 		jp.add(new DiamSquares(12,106,0));
 		jp.add(new DiamSquares(12,128,15));
 		jp.add(new DiamSquares(12,156,0));
+		jp.add(new DiamSquares(12,190,15));
+		jp.add(new DiamSquares(12,230,0));
 		add(jp);
 	}
 	
