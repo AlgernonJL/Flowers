@@ -1,5 +1,6 @@
 package layered;
 
+import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.geom.Rectangle2D;
@@ -35,6 +36,9 @@ public class DiamSquares extends JPanel{
 		int loop=0;
 		g2.rotate(Math.toRadians(degOffset), centX, centY);
 		while(loop<ammount){
+			g2.setPaint(Color.WHITE);
+			g2.fill(new Rectangle2D.Double(centX+offset, centY+offset, length, length));
+			g2.setPaint(Color.BLACK);
 			g2.draw(new Rectangle2D.Double(centX+offset, centY+offset, length, length));
 			g2.rotate(Math.toRadians(360/(ammount)),centX,centY);
 			loop++;
