@@ -8,16 +8,17 @@ public class Middle extends JPanel{
 	private static final long serialVersionUID = 4790958990253702306L;
 	int centX;
 	int centY;
-	int length;
 	int width;
+	int length;
 	int angle;
 	Color clr;
 	
-	public Middle(Color clr,int length,int width,int angle){
+	public Middle(Color clr,int width,int length,int angle){
 		this.clr = clr;
-		this.length = length;
 		this.width = width;
+		this.length = length;
 		this.angle = angle;
+		setOpaque(false);
 	}
 	
 	public void paintComponent(Graphics g){
@@ -30,7 +31,7 @@ public class Middle extends JPanel{
 		
 		int loop = 0;
 		while(loop < 360/angle){
-			g2.draw(new Ellipse2D.Double(centX, centY, length, width));
+			g2.draw(new Ellipse2D.Double(centX, centY, width, length));
 			g2.rotate(Math.toRadians(angle),centX,centY);
 			loop++;
 		}
