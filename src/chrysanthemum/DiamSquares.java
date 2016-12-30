@@ -1,4 +1,4 @@
-package layered;
+package chrysanthemum;
 
 import java.awt.Color;
 import java.awt.Graphics;
