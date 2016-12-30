@@ -3,6 +3,7 @@ package layered;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.RenderingHints;
 import java.awt.geom.Rectangle2D;
 
 import javax.swing.JPanel;
@@ -38,6 +39,7 @@ public class DiamSquares extends JPanel{
 		int centX = getSize().width/2;
 		int centY = getSize().height/2;
 		int loop=0;
+        g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 		g2.rotate(Math.toRadians(degOffset), centX, centY);
 		while(loop<ammount){
 			g2.setPaint(Color.WHITE);

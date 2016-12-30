@@ -14,18 +14,23 @@ public class Flower extends JFrame{
 		LayoutManager overlay = new OverlayLayout(jp);
 		jp.setLayout(overlay);
 		DiamSquares ds;
+		
 		double length = 10;
+		int number = 12;
+		int loopmax=18;
+		
 		int loop = 0;
-		while(loop<18){
+		while(loop<loopmax){
 			if(loop%2==0){
-				ds = new DiamSquares(12,(int) length,0);
+				ds = new DiamSquares(number,(int) length,0);
 			}else{
-				ds = new DiamSquares(12,(int) length,15);
+				ds = new DiamSquares(number,(int) length,360/(number*2));
 			}
 			length = ds.getDisplace();
 			jp.add(ds);
 			loop++;
 		}
+		jp.add(new InscribedCircle((int)length));
 		add(jp);
 	}
 	
