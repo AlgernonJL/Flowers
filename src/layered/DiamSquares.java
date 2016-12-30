@@ -28,6 +28,10 @@ public class DiamSquares extends JPanel{
 		setOpaque(false);
 	}
 	
+	public double getDisplace(){
+		return Math.sqrt(Math.pow(offset, 2)*2)+Math.sqrt(Math.pow(length, 2)*2);
+	}
+	
 	public void paintComponent(Graphics g){
 		super.paintComponent(g);
 		Graphics2D g2 = (Graphics2D) g;
